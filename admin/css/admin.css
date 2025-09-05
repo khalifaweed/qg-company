@@ -1,0 +1,253 @@
+/* WhatJobs Feeder Admin Styles */
+
+.whatjobs-feeder-stats {
+    margin: 20px 0;
+}
+
+.stats-box {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 15px;
+    max-width: 300px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.stats-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #23282d;
+}
+
+.stats-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.stats-box li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Feed status indicators */
+.status-active {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.status-inactive {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+/* URL Preview */
+.whatjobs-url-preview {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.whatjobs-url-preview h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.code-preview {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 12px;
+    word-break: break-all;
+    line-height: 1.4;
+}
+
+.code-preview code {
+    background: none;
+    padding: 0;
+    color: #0073aa;
+}
+
+/* Info box */
+.whatjobs-info-box {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 800px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.whatjobs-info-box h3 {
+    margin-top: 0;
+    color: #23282d;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.whatjobs-info-box h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #23282d;
+}
+
+.whatjobs-info-box ul,
+.whatjobs-info-box ol {
+    padding-left: 20px;
+}
+
+.whatjobs-info-box li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.whatjobs-info-box strong {
+    color: #0073aa;
+}
+
+/* Connection status */
+#connection-status {
+    margin-left: 10px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+#connection-status.success {
+    color: #46b450;
+    background: #ecf7ed;
+    border: 1px solid #46b450;
+}
+
+#connection-status.error {
+    color: #dc3232;
+    background: #fbeaea;
+    border: 1px solid #dc3232;
+}
+
+/* Table improvements */
+.wp-list-table .column-id {
+    width: 60px;
+}
+
+.wp-list-table .column-frequency {
+    width: 120px;
+}
+
+.wp-list-table .column-status {
+    width: 80px;
+}
+
+.wp-list-table .column-last_run,
+.wp-list-table .column-next_run {
+    width: 140px;
+}
+
+/* Row actions styling */
+.row-actions {
+    color: #ddd;
+}
+
+.row-actions span {
+    display: inline-block;
+}
+
+.row-actions .run-feed {
+    color: #0073aa;
+}
+
+.row-actions .pause-feed {
+    color: #d63638;
+}
+
+.row-actions .activate-feed {
+    color: #00a32a;
+}
+
+/* Form improvements */
+.form-table th {
+    width: 200px;
+    padding-left: 0;
+}
+
+.form-table td {
+    padding-left: 0;
+}
+
+.form-table .description {
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Button improvements */
+.button.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .stats-box {
+        max-width: 100%;
+    }
+    
+    .whatjobs-info-box {
+        max-width: 100%;
+        padding: 15px;
+    }
+    
+    .code-preview {
+        font-size: 11px;
+        padding: 8px;
+    }
+}
+
+/* Loading spinner */
+.whatjobs-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 5px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Notice improvements */
+.notice.notice-info {
+    border-left-color: #0073aa;
+}
+
+.notice p {
+    margin: 0.5em 0;
+}
+
+/* Highlight required fields */
+.form-table input[required],
+.form-table select[required] {
+    border-left: 3px solid #0073aa;
+}
+
+/* Success/Error states */
+.field-success {
+    border-color: #46b450 !important;
+    box-shadow: 0 0 2px rgba(70, 180, 80, 0.3);
+}
+
+.field-error {
+    border-color: #dc3232 !important;
+    box-shadow: 0 0 2px rgba(220, 50, 50, 0.3);
+}
